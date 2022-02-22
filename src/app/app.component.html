@@ -1,0 +1,9 @@
+<div>
+  <h3>Info juegos de tronos</h3>
+  <div *ngFor="let data of characters" style="border: 1px solid; padding: 0 auto">
+    <h3>{{data.firstName + " " + data.lastName}}</h3>
+    <p>{{data.family}}</p>
+    <img [src]="data.imageUrl" alt="imagen de personaje">
+    <p>{{data.title}}</p>
+  </div>
+</div>
